@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="galeria.css">
+    <!-- Agregamos la etiqueta link para el favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <img class="heart-background" src="img/f7.jpg" alt="Heart Background">
+    <h1>"Estrellas de Amor"</h1>
+    <h1>"Las Mejores Despedidas son el Prólogo de Nuevos Encuentros"</h1>
+
+    <div class="galeria">
+        <div class="foto">
+            <img src="img/M.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>"Eres como un poema eterno, una sinfonía que nunca se desvanece. En cada uno de tus gestos encuentro la elegancia de un ballet, la armonía de una melodía que acaricia mis oídos. Cada día a tu lado es una estrofa nueva, llena de emociones que bailan al ritmo de nuestro amor. Eres la estrella que brilla en mi noche, la razón por la cual mi corazón late con fuerza. Y así, entre versos y acordes, nuestra historia se teje con hilos de amor que se entrelazan en un tapiz eterno."</p>
+            <p>🌹🌹🌹🌹🌹🌹</p>
+        </div>
+    </div>
+
+    <div class="galeria">
+        <div class="foto">
+            <img src="img/Ne.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>"En el lienzo de mi vida, tu presencia es la pincelada más hermosa. Cada día a tu lado es una obra maestra que se despliega con colores vibrantes de amor, risas y momentos inolvidables. Eres la musa que inspira cada uno de mis días, y en la galería de mi corazón, tu retrato ocupa el lugar más destacado, porque no hay obra de arte más preciada que la historia que estamos escribiendo juntos."</p>
+            <p>💖💖💖💖💖</p>
+        </div>
+    </div>
+
+    <div class="galeria">
+        <div class="foto">
+            <img src="img/Nena.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>"Tus ojos son como dos luceros que iluminan mi camino en la oscuridad. En ellos encuentro un universo entero, lleno de secretos y promesas. Tu sonrisa, un faro de esperanza, guía mis días con una luz que disipa cualquier sombra. Eres la protagonista de mi historia, el personaje que da sentido a cada capítulo. Y así, mientras caminamos juntos en esta travesía llamada vida, agradezco cada página que escribimos juntos, porque cada palabra es una declaración de amor que resuena en mi corazón."</p>
+            <p>(❤️´艸｀❤️)(❤️´艸｀❤️)(❤️´艸｀❤️)</p>
+        </div>
+    </div>
+
+    <div class="galeria">
+        <div class="foto">
+            <img src="img/Y.jpg" alt="" >
+        </div>
+        <div class="pie">
+            <p>Quiero agradecerte sinceramente por los hermosos momentos que hemos compartido. Tu presencia en mi vida ha sido un regalo invaluable. Gracias por tu amistad, apoyo incondicional y por ser mi fuente constante de alegría. Cada recuerdo contigo es un tesoro que atesoro profundamente.</p>
+            <p>❤️❤️❤️❤️❤️❤️</p>
+        </div>
+    </div>
+
+    <!-- Agregamos una etiqueta script para el script de JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var imagenes = document.querySelectorAll('.img');
+    
+            imagenes.forEach(function (imagen) {
+                imagen.addEventListener('mouseenter', function () {
+                    imagen.style.transform = 'scale(1.1)';
+                    imagen.style.transition = 'transform 0.3s ease';
+                });
+    
+                imagen.addEventListener('mouseleave', function () {
+                    imagen.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
